@@ -23,13 +23,20 @@ or you can generate all available packages by using
 ```rpm
 %packager       User Name <user@email.com>
 
+%_gpg_name      %{packager}
+%_signature     gpg
+%_gpgbin        /usr/bin/gpg
+
+
 %_topdir        /path/to/this/repository/root
 %_tmppath       /var/tmp
 
 %_rpmtopdir     %{_topdir}
-%_builddir      %{_rpmtopdir}/BUILD
-%_rpmdir        %{_rpmtopdir}/RPMS
-%_sourcedir     %{_rpmtopdir}/SOURCES
-%_specdir       %{_rpmtopdir}/SPECS
-%_srcrpmdir     %{_rpmtopdir}/SRPMS
+%_buildrootdir  %{_rpmtopdir}/buildroot
+%_builddir      %{_rpmtopdir}/build
+%_rpmdir        %{_rpmtopdir}/rpms
+%_sourcedir     %{_rpmtopdir}/sources
+%_specdir       %{_rpmtopdir}/specs
+%_srcrpmdir     %{_rpmdir}/src
+
 ```
