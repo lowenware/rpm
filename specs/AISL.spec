@@ -8,7 +8,7 @@ Version:        %{_version}
 Release:        1
 License:        GPL
 Summary:        Asynchronous Internet Service Library
-Url:            https://github,com/lowenware/AISL
+Url:            https://github.com/lowenware/AISL
 Group:          System Environment/Libraries
 Source:         https://lowenware.com/src/aisl-%{version}.tar.gz
 BuildRequires:  cmake gcc
