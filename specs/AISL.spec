@@ -26,6 +26,8 @@ It is written in plain C for best performance and lightness.
 %{__make} %{?_smp_mflags}
 
 %install
+%cmake
+
 %{__make} install DESTDIR=%{buildroot} CMAKE_INSTALL_LIBDIR=%{_libdir} %{?_smp_mflags} 
 
 %post
