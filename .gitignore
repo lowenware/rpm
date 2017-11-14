@@ -3,4 +3,5 @@
 
 !deploy.sh
 !.gitignore
-!/SPECS/
+!/specs/
+!*.repo
